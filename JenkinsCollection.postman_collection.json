@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "199a4b89-97c9-4390-ae3c-f0e98d67232b",
+		"name": "JenkinsCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "student_data_cleanup_service",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "7fd8e095-c1dd-4f64-ae71-248e42532871",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Body matches string\", function () {",
+							"    pm.expect(pm.response.text()).to.include(\"fieldCount\");",
+							"}); "
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[ \"5dd2a703b18e22322d5bbf33\" ]"
+				},
+				"url": {
+					"raw": "http://cbt.dilipoakacademy.com:10000/api/delete-students-data",
+					"protocol": "http",
+					"host": [
+						"cbt",
+						"dilipoakacademy",
+						"com"
+					],
+					"port": "10000",
+					"path": [
+						"api",
+						"delete-students-data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,13 @@
+ {
+  "name": "postman",
+  "version": "1.0.0",
+  "description": "Project for data backup setup",
+  "scripts": {
+    "test": "newman run JenkinsCollection.postman_collection.json"
+  },
+  "author": "Radhika Hambire",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.0.1"
+  }
+}
