@@ -17,7 +17,7 @@
 							"    pm.response.to.have.status(200);",
 							"});",
 							"pm.test(\"Body matches string\", function () {",
-							"    pm.expect(pm.response.text()).to.include(\"fieldCount\");",
+							"    pm.expect(pm.response.text()).to.include(\"Entries deleted successfully\");",
 							"}); "
 						],
 						"type": "text/javascript"
@@ -29,7 +29,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "[ \"5dd2a703b18e22322d5bbf33\" ]"
+					"raw": "[ \"5eb2975c2e067f66f026e3b6\" ]"
 				},
 				"url": {
 					"raw": "http://cbt.dilipoakacademy.com:10000/api/delete-students-data",
