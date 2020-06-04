@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Project for data backup setup",
   "scripts": {
-    "test": "newman run JenkinsCollection.postman_collection.json --reporters html postman.html"
+    "test": "newman run JenkinsCollection.postman_collection.json --reporters htmlextra --reporter-htmlextra-export reports/report.html"
   },
   "author": "Radhika Hambire",
   "license": "ISC",
